@@ -96,3 +96,108 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## Project Overview
+Yummigo is a backend application developed using NestJS and TypeScript, designed as the foundation for a scalable food-delivery platform.
+The project follows a modular server-side architecture that provides a structured foundation for developing REST APIs, business logic, testing, and future integrations such as authentication, restaurants, orders, and database services.
+
+
+## Technology Stack
+Technology
+Purpose
+Node.js
+Backend runtime environment
+NestJS 11
+Backend application framework
+TypeScript
+Application development language
+Express
+HTTP server platform
+Jest
+Unit testing
+Supertest
+API/end-to-end testing
+ESLint
+Code quality and linting
+Prettier
+Code formatting
+
+
+## Architecture
+The application follows the standard NestJS modular architecture, separating application responsibilities into different layers.
+Current Core Structure
+Yummigo
+├── src/
+│   ├── app.controller.ts
+│   ├── app.controller.spec.ts
+│   ├── app.module.ts
+│   ├── app.service.ts
+│   └── main.ts
+│
+├── test/
+├── package.json
+├── nest-cli.json
+├── tsconfig.json
+├── eslint.config.mjs
+└── README.md
+
+Main Components
+main.ts
+Acts as the application entry point and bootstraps the NestJS application.
+app.module.ts
+Defines the root application module and provides the main dependency-injection structure.
+app.controller.ts
+Handles HTTP requests through the application's controller layer.
+app.service.ts
+Contains the application's service-layer logic.
+app.controller.spec.ts
+Provides unit testing for the application controller.
+
+## Development Practices
+The project includes a standard backend development setup with:
+TypeScript-based development
+Modular NestJS architecture
+Dependency injection
+REST API foundation
+Unit testing with Jest
+API testing support through Supertest
+ESLint-based code quality checks
+Prettier-based formatting
+Development and production start scripts
+
+## Current Implementation Status
+The current public repository represents the initial backend foundation of Yummigo.
+The repository currently does not contain implemented modules for:
+User authentication
+User management
+Restaurant management
+Food/product management
+Cart management
+Order processing
+Payment integration
+Delivery management
+Database integration
+These can be developed as separate NestJS modules as the project evolves.
+
+## Future Architecture
+The project can be extended into a complete food-delivery backend using modules such as:
+src/
+├── auth/
+├── users/
+├── restaurants/
+├── products/
+├── cart/
+├── orders/
+├── payments/
+├── delivery/
+├── common/
+└── database/
+
+This modular approach allows individual business domains to remain independent and makes the application easier to maintain, test, and scale.
+
+## Project Objective
+The primary objective of Yummigo is to establish a clean, scalable, and maintainable backend architecture for a food-delivery application using modern TypeScript and NestJS development practices.
+
+## Project Description
+Yummigo is a TypeScript-based backend application built with NestJS, serving as the foundation for a scalable food-delivery platform. It follows a modular architecture for developing REST APIs and business logic, with integrated testing, linting, and code-formatting workflows to support maintainable backend development.
+
